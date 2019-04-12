@@ -10,7 +10,12 @@ import UIKit
 import PKHUD
 import CoreLocation
 
+// Cocoapods - 3rd party dependency manager, that helps in easy way manage 3rd party library's
+
+// MVC - one of the most popular and simple architectures, that divides app modules into 3 components: model, view, controller
+
 class ListViewController: UIViewController {
+    // Table view - ready UI element that provides the ability to develop custom list
     @IBOutlet weak var tableView: UITableView!
     
     var loader = PKHUD.sharedHUD
@@ -20,6 +25,16 @@ class ListViewController: UIViewController {
             tableView.reloadData()
         }
     }
+    
+    /*
+     *  Developing UI and layout in storyboard
+     *  Helps save development time by visualizing the view hierarchy, constraints
+     *  And less source code
+     */
+    
+    /*
+     *  Constraints provides provide the development of a flexible user interface that will adapt to the screens of different devices
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +67,13 @@ class ListViewController: UIViewController {
     }
     
     // MARK: Network
+    
+    /*
+     *  URLSession - native instrument with many features, like:
+     *  - privacy storage for cookies, cache and other;
+     *  - ability to managing downloads;
+     *  - downloads and uploads data in background and others;
+     */
     
     func loadContributors(with offset: Int) {
         let headers = ["Accept": "application/json"]
