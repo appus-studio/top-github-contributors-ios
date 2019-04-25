@@ -6,46 +6,33 @@ Made in [![Appus Studio](https://github.com/appus-studio/top-github-contributors
 
 A simple app that shows the list of top contributors using Github API.
 
-Dependency manager:
-Cocoapods - 3rd party dependency manager, that helps in easy way manage 3rd party library's
+**Installation:**
+1. Update Cocoapods - `sudo gem update cocoapods --pre`
+2. Update Pods - `pod update`
+3. Run `TopContributors.xcworkspace`
 
-Architecture:
-MVC - one of the most popular and simple architectures, that divides app modules into 3 components: model, view, controller
-
-Stroyboards:
-Developing UI and layout in storyboard
-Helps save development time by visualizing the view hierarchy, constraints
-And less source code
-
-Constraints provides provide the development of a flexible user interface that will adapt to the screens of different devices
-
-Network:
-URLSession - native instrument with many features, like:
-- privacy storage for cookies, cache and other;
-- ability to managing downloads;
-- downloads and uploads data in background and others;
-
-Patterns:
-Delegate pattern provides transfer of responsibility of one object to another via abstraction
-Keyword "weak" in ARC environment helps prevent memory leaks when two instances store "strong" pointers on each other
-
-3rd party libs:
-Kingfisher - image caching in simple way
-PKHUD - ready for use loader, look like native iOS HUD’s
+**Architecture:**
+UI modules are built with VIPER pattern
+Application has 4 targets:
+1. DataLayer - processing data and network API
+2. TopContributors - UI modules
+4. DataLayerTests - tests for DataLayer
+5. TopContributorsTests - tests for UI layer
 
 License
 --------
 
-    Copyright 2019 Appus Studio LP.
+Copyright 2019 Appus Studio LP.
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+

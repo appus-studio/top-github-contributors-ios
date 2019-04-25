@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TopContributors
+
+  Created by Andrew Mysyk on 4/25/19.
+  Copyright © 2019 Appus Studio LP. All rights reserved.
+*/
+
+"Cannot fetch data" = "Cannot fetch data";
+"User has no location." = "User has no location.";
+"Top Contributors" = "Top Contributors";
